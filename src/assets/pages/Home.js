@@ -3,22 +3,24 @@ import { Link } from "react-scroll";
 
 import logo from '../svg/logo.svg'
 import quemSomos from '../svg/quem-somos.svg'
+import estampasExclusivas from '../svg/estampas-exclusivas.svg'
 
 import background from '../images/background.png'
 import imgQuemSomos from '../images/quem-somos.png'
 import toucan from '../images/toucan.png'
 
 export default function Home() {
+    // const [ scrollTop, setScrollTop ] = useState(0)
     const [ position, setPosition ] = useState('absolute')
     const [ top, setTop ] = useState('35%')
     const [ width, setWidth ] = useState('340px')
 
-    window.onscroll = e => {
+    window.onscroll = () => {
         document.addEventListener('scroll', () => {
             if( document.documentElement.scrollTop > 325 ) {
                 setPosition( 'fixed' )
-                setTop( '1.5%' )
-                setWidth( '180px' )
+                setTop( '2.2%' )
+                setWidth( '220px' )
             } else {
                 setPosition( 'absolute' )
                 setTop('35%')
@@ -39,38 +41,41 @@ export default function Home() {
     return (
         <>
             <div id='menu' 
-                className="nav">
-                <Link
-                    to="home"
-                    smooth={true}
-                    duration={500}
-                >
-                    Home
-                </Link>
+                className="nav"
+            >
+                <div className='max-container' >
+                    <Link
+                        to="home"
+                        smooth={true}
+                        duration={500}
+                    >
+                        Home
+                    </Link>
 
-                <Link 
-                    to="quem-somos"
-                    smooth={true}
-                    duration={500}
-                >
-                    Quem somos
-                </Link>
+                    <Link 
+                        to="quem-somos"
+                        smooth={true}
+                        duration={500}
+                    >
+                        Quem somos
+                    </Link>
 
-                <Link 
-                    to="estampas"
-                    smooth={true}
-                    duration={500}
-                >
-                    Nossas Estampas
-                </Link>
+                    <Link 
+                        to="estampas"
+                        smooth={true}
+                        duration={500}
+                    >
+                        Nossas Estampas
+                    </Link>
 
-                <Link 
-                    to="fale-conosco"
-                    smooth={true}
-                    duration={500}
-                >
-                    Contato
-                </Link>
+                    <Link 
+                        to="fale-conosco"
+                        smooth={true}
+                        duration={500}
+                    >
+                        Contato
+                    </Link>
+                </div>
             </div>
 
             <div id='logo' 
@@ -86,7 +91,7 @@ export default function Home() {
                 <img className="background" src={background} alt="" />
             </div>
 
-            <div id='quem-somos' className='container quem-somos'>
+            <div id='quem-somos' className='container quem-somos max-container'>
                 <div className='imagem'>
                     <img src={ imgQuemSomos } alt="" />
                 </div>
@@ -107,9 +112,22 @@ export default function Home() {
                 </div>
             </div>
 
-            <div id='estampas' className='container'>
-                <div>
-                    NOSSAS ESTAMPAS
+            <div id='estampas' className='container nossas-estampas'>
+                <div className="container-banner">
+                    <div className="text-banner">
+                        <img src={ estampasExclusivas } alt="" />
+                        <p>
+                        Somos especializados em transformar suas ideias em criações unicas, dentro das mais recentes tendências do mercado!
+                        </p>
+                    </div>
+                </div>
+                <div className="container-estampas">
+                    <div className="title">
+
+                    </div>
+                    <div className="images">
+
+                    </div>
                 </div>
             </div>
 
