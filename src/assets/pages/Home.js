@@ -8,7 +8,7 @@ import nossasEstampas from '../svg/nossas-estampas.svg'
 import faleConosco from '../svg/fale-conosco.svg'
 
 import instagram from '../svg/instagram.svg'
-import facebook from '../svg/facebook.svg'
+// import facebook from '../svg/facebook.svg'
 import pinterest from '../svg/pinterest.svg'
 
 import background from '../images/background.png'
