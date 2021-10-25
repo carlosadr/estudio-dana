@@ -51,10 +51,10 @@ export default function Home() {
 
     return (
         <>
-            <div id='menu'
+            <header id='menu'
                 className="nav"
             >
-                <div className='max-container' >
+                <nav className='max-container' >
                     <Link
                         to="home"
                         smooth={true}
@@ -86,14 +86,14 @@ export default function Home() {
                     >
                         Contato
                     </Link>
-                </div>
-            </div>
+                </nav>
+            </header>
 
             <div id='logo'
                 className='logo'
                 style={_handlePosition()}
             >
-                <img src={logo} alt="" />
+                <img src={logo} alt="Estúdio Dana" />
             </div>
 
             <div id='home'
@@ -149,6 +149,7 @@ export default function Home() {
 
                     <label> Canal </label>
                     <select
+                        style={ channel === 0 ? { color: "#F8C9AA"} : { color : "#EA4B37" } }
                         defaultValue={0}
                         onChange={e => setChannel(parseInt(e.target.value))}
                     >
