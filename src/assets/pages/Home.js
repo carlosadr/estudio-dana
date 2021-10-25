@@ -179,13 +179,13 @@ export default function Home() {
                             switch (channel) {
                                 case 1:
                                     window.open(
-                                        `whatsapp://send?phone=17623096714&text=Olá me chamo${ name }, ${message}`, 
+                                        `whatsapp://send?phone=17623096714&text=Olá me chamo ${ name }, ${message}`, 
                                         '_blank'
                                     )
                                     break;
                                 case 2:
                                     window.open(
-                                        `mailto:estudiodana.cs@gmail.com? Subject: Mais informações sobre as estampas exclusivas&body=Olá me chamo${ name }, ${ message }`,
+                                        `mailto:estudiodana.cs@gmail.com? Subject: Mais informações sobre as estampas exclusivas&body=Olá me chamo ${ name }, ${ message }`,
                                         '_blank'
                                     )
                                     break;
