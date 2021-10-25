@@ -18,40 +18,40 @@ import flower from '../images/flower.png'
 import macaw from '../images/macaw.png'
 
 export default function Home() {
-    const [ position, setPosition ] = useState('absolute')
-    const [ top, setTop ] = useState('35%')
-    const [ width, setWidth ] = useState('340px')
+    const [position, setPosition] = useState('absolute')
+    const [top, setTop] = useState('35%')
+    const [width, setWidth] = useState('340px')
 
-    const [ channel, setChannel ] = useState(0)
-    const [ name, setName ] = useState("")
-    const [ message, setMessage ] = useState("")
+    const [channel, setChannel] = useState(0)
+    const [name, setName] = useState("")
+    const [message, setMessage] = useState("")
 
     window.onscroll = () => {
         document.addEventListener('scroll', () => {
-            if( document.documentElement.scrollTop > 325 ) {
-                setPosition( 'fixed' )
-                setTop( '2.2%' )
-                setWidth( '220px' )
+            if (document.documentElement.scrollTop > 325) {
+                setPosition('fixed')
+                setTop('2.2%')
+                setWidth('220px')
             } else {
-                setPosition( 'absolute' )
+                setPosition('absolute')
                 setTop('35%')
-                setWidth( '340px' )
+                setWidth('340px')
             }
         })
     }
 
     function _handlePosition() {
         return {
-            position : position,
-            top : top,
-            width : width,
-            transition : 'width 0.6s'
+            position: position,
+            top: top,
+            width: width,
+            transition: 'width 0.6s'
         }
     }
 
     return (
         <>
-            <div id='menu' 
+            <div id='menu'
                 className="nav"
             >
                 <div className='max-container' >
@@ -63,7 +63,7 @@ export default function Home() {
                         Home
                     </Link>
 
-                    <Link 
+                    <Link
                         to="quem-somos"
                         smooth={true}
                         duration={500}
@@ -71,7 +71,7 @@ export default function Home() {
                         Quem somos
                     </Link>
 
-                    <Link 
+                    <Link
                         to="estampas"
                         smooth={true}
                         duration={500}
@@ -79,7 +79,7 @@ export default function Home() {
                         Nossas Estampas
                     </Link>
 
-                    <Link 
+                    <Link
                         to="fale-conosco"
                         smooth={true}
                         duration={500}
@@ -89,14 +89,14 @@ export default function Home() {
                 </div>
             </div>
 
-            <div id='logo' 
+            <div id='logo'
                 className='logo'
-                style={ _handlePosition() }
+                style={_handlePosition()}
             >
                 <img src={logo} alt="" />
             </div>
-            
-            <div id='home' 
+
+            <div id='home'
                 className='container'
             >
                 <img className="background" src={background} alt="" />
@@ -104,10 +104,10 @@ export default function Home() {
 
             <div id='quem-somos' className='container quem-somos max-container'>
                 <div className='imagem'>
-                    <img src={ imgQuemSomos } alt="" />
+                    <img src={imgQuemSomos} alt="" />
                 </div>
                 <div className="container-text">
-                    <img src={ quemSomos } alt="" />
+                    <img src={quemSomos} alt="" />
                     <div className="text">
                         <p>
                             Olá, somos do Estúdio Dana, me chamo Carla, sou maquiadora profissional há 4 anos e trabalho em conjunto com meu esposo Carlos que já atua no mercado de estamparia e ilustração digitais há 8 anos.
@@ -119,39 +119,38 @@ export default function Home() {
                             Assim, surgiu a necessidade de montar nosso próprio negócio, e então nasceu Dana. Nosso foco é em estampas exclusivas, com a maioria dos elementos desenhados à mão, personalizados a gosto do cliente para que você possa sentir carinho e atenção através de cada estampa.
                         </p>
                     </div>
-                    <img className='toucan' src={ toucan } alt="" />
+                    <img className='toucan' src={toucan} alt="" />
                 </div>
             </div>
 
             <div id='estampas' className='container nossas-estampas'>
                 <div className="container-banner">
                     <div className="text-banner">
-                        <img src={ estampasExclusivas } alt="" />
-                        <img className='flower' src={ flower } alt="" />
+                        <img src={estampasExclusivas} alt="" />
+                        <img className='flower' src={flower} alt="" />
                         <p>
-                        Somos especializados em transformar suas ideias em criações unicas, dentro das mais recentes tendências do mercado!
+                            Somos especializados em transformar suas ideias em criações unicas, dentro das mais recentes tendências do mercado!
                         </p>
                     </div>
                 </div>
                 <div className="container-estampas max-container">
                     <div className="title">
-                        <img src={ nossasEstampas } alt="" />
-                        <img id='macaw' src={ macaw } alt="" />
+                        <img src={nossasEstampas} alt="" />
+                        <img id='macaw' src={macaw} alt="" />
                     </div>
                     <div className="images">
-                        Imagens
                     </div>
                 </div>
             </div>
 
             <div id='fale-conosco' className='container fale-conosco'>
                 <form id='form'>
-                    <img src={ faleConosco } alt="" />
+                    <img src={faleConosco} alt="" />
 
                     <label> Canal </label>
-                    <select 
+                    <select
                         defaultValue={0}
-                        onChange={ e => setChannel(parseInt(e.target.value)) }
+                        onChange={e => setChannel(parseInt(e.target.value))}
                     >
                         <option value={0} disabled>Selecione o canal</option>
                         <option value={1} >Whatsapp</option>
@@ -159,43 +158,43 @@ export default function Home() {
                     </select>
 
                     <label> Seu nome </label>
-                    <input 
-                        placeholder="ex.: Thomas Magno" 
-                        value={ name } 
-                        onChange={ e => setName(e.target.value) } 
+                    <input
+                        placeholder="ex.: Thomas Magno"
+                        value={name}
+                        onChange={e => setName(e.target.value)}
                     />
 
                     <label> Mensagem </label>
-                    <textarea 
-                        value={ message } 
-                        onChange={ e => setMessage(e.target.value) } 
-                        placeholder="Deixe sua mensagem aqui, que iremos responder com todo carinho ;)" 
+                    <textarea
+                        value={message}
+                        onChange={e => setMessage(e.target.value)}
+                        placeholder="Deixe sua mensagem aqui, que iremos responder com todo carinho ;)"
                     />
 
-                    <button 
+                    <button
                         id="button"
                         type="button"
-                        onClick={ () => {
+                        onClick={() => {
                             switch (channel) {
                                 case 1:
                                     window.open(
-                                        `whatsapp://send?phone=17623096714&text=Olá me chamo ${ name }, ${message}`, 
+                                        `whatsapp://send?phone=17623096714&text=Olá me chamo ${name}, ${message}`,
                                         '_blank'
                                     )
                                     break;
                                 case 2:
                                     window.open(
-                                        `mailto:estudiodana.cs@gmail.com? Subject: Mais informações sobre as estampas exclusivas&body=Olá me chamo ${ name }, ${ message }`,
+                                        `mailto:estudiodana.cs@gmail.com? Subject: Mais informações sobre as estampas exclusivas&body=Olá me chamo ${name}, ${message}`,
                                         '_blank'
                                     )
                                     break;
                                 default:
-                                    alert( "Selecione primeiro por qual canal deseja nós enviar sua mensagem." )
+                                    alert("Selecione primeiro por qual canal deseja nós enviar sua mensagem.")
                                     break;
                             }
                         }}
                     >
-                        Enviar 
+                        Enviar
                     </button>
                 </form>
 
@@ -203,12 +202,12 @@ export default function Home() {
                     <div className="max-container">
                         <p>Copyright © 2021 Estúdio Dana, Todos os direitos reservados.</p>
                         <div id='social-media'>
-                            <a 
+                            <a
                                 target='_blank'
                                 rel="noreferrer"
                                 href="https://instagram.com/estudio_dana"
-                            > 
-                                <img src={ instagram } alt="Instaram" /> 
+                            >
+                                <img src={instagram} alt="Instaram" />
                             </a>
                             {/* <a 
                                 target='_blank'
@@ -217,12 +216,12 @@ export default function Home() {
                             > 
                                 <img src={ facebook } alt="Facebook" />  
                             </a> */}
-                            <a 
+                            <a
                                 target='_blank'
                                 rel="noreferrer"
                                 href="https://pinterest.com/estudio_dana"
-                            > 
-                                <img src={ pinterest } alt="Pinterest" />
+                            >
+                                <img src={pinterest} alt="Pinterest" />
                             </a>
                         </div>
                     </div>
