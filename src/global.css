@@ -7,7 +7,13 @@
     box-sizing: border-box;
 }
 
-body {
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body, input, textarea, button {
     font: 400 1em Roboto, sans-serif;
     -webkit-font-smoothing: antialiesed;
 
@@ -22,6 +28,59 @@ a {
     text-decoration: none;
 }
 
+input, textarea, select {
+    font-size: 14px;
+    color: #EA4B37;
+    background-color: #FFFDF0;
+    border: solid 2px transparent;
+    border-radius: 8px;
+
+    padding: 12px;
+    transition: border 0.5s;
+}
+
+input:focus, textarea:focus, select:focus {
+    border: solid 2px #EA4B37
+}
+
+::placeholder {
+    font-size: 14px;
+    color: #F8C9AA;
+}
+
+
+label {
+    margin-top: 13px;
+    margin-bottom: 4px;
+}
+input, select {
+    margin-top: 4px;
+    margin-bottom: 13px;
+}
+textarea {
+    margin-top: 4px;
+    margin-bottom: 26px;
+}
+
+#button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    background-color: #EA4B37;
+    border: none;
+    color: #FFFDF0;
+
+    border-radius: 8px;
+    transition: ease-in background-color 0.2s;
+}
+
+#button:hover, #button:focus {
+    cursor: pointer;
+    background-color: #00366B;
+}
+
 .nav {
     background-color: #fffdf0bd;
     padding: 20px;
@@ -32,7 +91,7 @@ a {
     width: 100%;
     align-items: center;
 
-    z-index: 1;
+    z-index: 3;
 }
 
 .nav div {
@@ -61,10 +120,11 @@ a {
 
 .container {
     display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     min-height: 100vh;
-    max-height: 100vh;
 
     justify-content: center;
     align-items: center;
@@ -72,13 +132,12 @@ a {
 
 .max-container {
     width: 100%;
-    height: 100%;
     max-width: 1360px;
 }
 
 .logo {
     left: 10%;
-    z-index: 2;
+    z-index: 4;
 }
 
 .container .background {
@@ -139,6 +198,11 @@ a {
 }
 
 .nossas-estampas {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 150px;
+
     height: fit-content !important;
 }
 
@@ -158,7 +222,9 @@ a {
 .nossas-estampas .container-banner .text-banner {
     display: flex;
     flex-direction: column;
-    padding: 35px;
+    position: relative;
+
+    padding: 40px;
     background-color: #F8C9AA;
 
     width: 100%;
@@ -167,4 +233,133 @@ a {
 
     justify-content: center;
     align-items: center;
+}
+
+.nossas-estampas .container-banner .text-banner img {
+    margin: auto 0;
+    z-index: 1;
+}
+
+.nossas-estampas .container-banner .text-banner .flower {
+    position: absolute;
+    top: -15%;
+    right: -15%;
+    height: 50%;
+}
+
+.nossas-estampas .container-banner .text-banner p {
+    margin: auto 0;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    text-transform: uppercase;
+    font-feature-settings: 'cpsp' on;
+
+    color: #EA4B37;
+}
+
+.nossas-estampas .container-estampas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nossas-estampas .container-estampas .title {
+    position: relative;
+    margin-top: 8%;
+}
+
+.nossas-estampas .container-estampas .title #macaw {
+    position: absolute;
+    width: 465px;
+
+    top: -80%;
+    left: -48%;
+}
+
+.nossas-estampas .container-estampas .images {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.fale-conosco {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.fale-conosco #form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc( 25vh - 77px );
+
+    width: 600px;
+    background-color: #F8C9AA;
+    border-radius: 15px;
+
+    padding: 60px;
+}
+
+.fale-conosco #form img {
+    margin-bottom: 26px;
+}
+
+
+.fale-conosco .container-block {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+
+    width: 100%;
+    max-height: 50vh;
+
+    padding: 20px;
+
+    color: #FFFDF0 !important;
+
+    background: #00366B;
+}
+
+.fale-conosco .container-block .max-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 25px;
+}
+
+#social-media a img {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 20px;
+    margin: 0 8px;
+    padding: 0 5px;
+
+    transition: all 0.2s;
+}
+
+#social-media a:hover img {
+    height: 25px;
 }
