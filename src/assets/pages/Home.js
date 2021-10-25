@@ -11,11 +11,11 @@ import instagram from '../svg/instagram.svg'
 // import facebook from '../svg/facebook.svg'
 import pinterest from '../svg/pinterest.svg'
 
-import background from '../images/background.png'
-import imgQuemSomos from '../images/quem-somos.png'
-import toucan from '../images/toucan.png'
-import flower from '../images/flower.png'
-import macaw from '../images/macaw.png'
+import background from '../images/background.webp'
+import imgQuemSomos from '../images/quem-somos.webp'
+import toucan from '../images/toucan.webp'
+import flower from '../images/flower.webp'
+import macaw from '../images/macaw.webp'
 
 export default function Home() {
     const [position, setPosition] = useState('absolute')
