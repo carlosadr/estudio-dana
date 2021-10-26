@@ -74,11 +74,45 @@ export default function NossasEstampas () {
                                 alt={ 'Estampa feita com a maioria dos elementos desenhados a mão.' }
                             />
                         </div>
-                        <div className="rows">
 
+                        <div className="rows">
+                            <Imagem 
+                                miniImg={ miniImg1 }
+                                zoomImg={ img1 }
+                            />
+                            <Imagem 
+                                miniImg={ miniImg2 }
+                                zoomImg={ img2 }
+                            />
+                            <Imagem 
+                                miniImg={ miniImg3 }
+                                zoomImg={ img3 }
+                            />
+                            <Imagem 
+                                miniImg={ miniImg4 }
+                                zoomImg={ img4 }
+                                alt={ 'Estampa feita com a maioria dos elementos desenhados a mão.' }
+                            />
                         </div>
+                        
                         <div className="rows">
-
+                            <Imagem 
+                                miniImg={ miniImg1 }
+                                zoomImg={ img1 }
+                            />
+                            <Imagem 
+                                miniImg={ miniImg2 }
+                                zoomImg={ img2 }
+                            />
+                            <Imagem 
+                                miniImg={ miniImg3 }
+                                zoomImg={ img3 }
+                            />
+                            <Imagem 
+                                miniImg={ miniImg4 }
+                                zoomImg={ img4 }
+                                alt={ 'Estampa feita com a maioria dos elementos desenhados a mão.' }
+                            />
                         </div>
                     </div>
                 </div>
