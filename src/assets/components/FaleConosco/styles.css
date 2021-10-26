@@ -1,0 +1,79 @@
+.fale-conosco {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    align-content: center;
+    flex-wrap: nowrap;
+
+    background-image: url('../../images/backgronund-footer.webp');
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    z-index: -1;
+}
+
+.fale-conosco #form {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: calc( 25vh - 77px );
+
+    width: 600px;
+    background-color: #F8C9AA;
+    border-radius: 15px;
+
+    padding: 60px;
+}
+
+.fale-conosco #form img {
+    margin-bottom: 26px;
+}
+
+
+.fale-conosco .container-block {
+    display: flex;
+    flex: 1;
+    align-items: flex-end;
+
+    width: 100%;
+    max-height: 50vh;
+
+    padding: 20px;
+
+    color: #FFFDF0 !important;
+
+    background: #00366B;
+}
+
+.fale-conosco .container-block .max-container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 25px;
+}
+
+#social-media a img {
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 20px;
+    margin: 0 8px;
+    padding: 0 5px;
+
+    transition: all 0.2s;
+}
+
+#social-media a:hover img {
+    height: 25px;
+}

@@ -1,0 +1,51 @@
+.quem-somos {
+    margin: 0 auto;
+    position: relative;
+    padding-top: 77px;
+}
+
+.quem-somos .imagem {
+    position: absolute;
+    left: 120px;
+    width: 100%;
+    height: auto;
+}
+
+.quem-somos .container-text {
+    position: absolute;
+    right: 120px;
+    width: 100%;
+    max-width: 572px;
+
+    padding: 51px 160px 51px 51px;
+
+    background-color: #EA4B37;
+    border-radius: 15px;
+    color: #FFFDF0;
+}
+
+.quem-somos .container-text .text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+    
+    font-size: 18px;
+    font-weight: 300;
+
+    line-height: 21px;
+    align-items: center;
+    text-align: justify;
+}
+
+.quem-somos .container-text .text p {
+    margin: 8px 0px;
+}
+
+.quem-somos .container-text .toucan {
+    position: absolute;
+    right: -18%;
+    top: -10%;
+
+    width: auto;
+    height: 657px;
+}

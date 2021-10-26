@@ -1,0 +1,100 @@
+#nossas-estampas {
+    display: flex;
+    flex-direction: column;
+    
+    padding-top: 77px;
+
+    height: fit-content !important;
+}
+
+#nossas-estampas .container-banner {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: 420px;
+
+    background-image: url('../../images/banner.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#nossas-estampas .container-banner .text-banner {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    padding: 40px;
+    background-color: #F8C9AA;
+
+    width: 100%;
+    height: 100%;
+    max-width: 420px;
+
+    justify-content: center;
+    align-items: center;
+}
+
+#nossas-estampas .container-banner .text-banner img {
+    margin: auto 0;
+    z-index: 1;
+}
+
+#nossas-estampas .container-banner .text-banner .flower {
+    position: absolute;
+    top: -15%;
+    right: -15%;
+    height: 50%;
+}
+
+#nossas-estampas .container-banner .text-banner p {
+    margin: auto 0;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    text-transform: uppercase;
+    font-feature-settings: 'cpsp' on;
+
+    color: #EA4B37;
+}
+
+#nossas-estampas .container-estampas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#nossas-estampas .container-estampas .title {
+    position: relative;
+    margin-top: 8%;
+}
+
+#nossas-estampas .container-estampas .title #macaw {
+    position: absolute;
+    width: 465px;
+
+    top: -80%;
+    left: -48%;
+
+    z-index: -1;
+}
+
+#nossas-estampas .container-estampas .images {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+#nossas-estampas .container-estampas .images .rows {
+    display: flex;
+    flex-direction: row;
+}
