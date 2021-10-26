@@ -39,7 +39,7 @@ import Imagem from '../Imagem'
 export default function NossasEstampas () {
     return (
         <>
-            <div id='nossas-estampas' className='container'>
+            <section id='nossas-estampas' className='container'>
                 <div className="container-banner">
                     <div className="text-banner">
                         <img src={estampasExclusivas} alt="" />
@@ -82,7 +82,7 @@ export default function NossasEstampas () {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </>
     )
 }

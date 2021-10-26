@@ -16,7 +16,7 @@ export default function FaleConosco () {
 
     return (
         <>
-            <div id='fale-conosco' className='container fale-conosco'>
+            <section id='fale-conosco' className='container fale-conosco'>
                 <form id='form'>
                     <img src={faleConosco} alt="" />
 
@@ -100,7 +100,7 @@ export default function FaleConosco () {
                         </div>
                     </div>
                 </footer>
-            </div>
+            </section>
         </>
     )
 }
