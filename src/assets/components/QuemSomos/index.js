@@ -14,7 +14,8 @@ export default function QuemSomos() {
                     <img src={imgQuemSomos} alt="" />
                 </div>
                 <div className="container-text">
-                    <img src={quemSomos} alt="" />
+                    <img src={ quemSomos } alt="Quem Somos" className="col-12" />
+                    
                     <div className="text">
                         <p>
                             Olá, somos do Estúdio Dana, me chamo Carla, sou maquiadora profissional há 4 anos e trabalho em conjunto com meu esposo Carlos que já atua no mercado de estamparia e ilustração digitais há 8 anos.
@@ -26,7 +27,8 @@ export default function QuemSomos() {
                             Assim, surgiu a necessidade de montar nosso próprio negócio, e então nasceu Dana. Nosso foco é em estampas exclusivas, com a maioria dos elementos desenhados à mão, personalizados a gosto do cliente para que você possa sentir carinho e atenção através de cada estampa.
                         </p>
                     </div>
-                    <img className='toucan' src={toucan} alt="" />
+
+                    <img className='toucan' src={toucan} alt="Ilustração digital de um tucano" />
                 </div>
             </section>
         </>

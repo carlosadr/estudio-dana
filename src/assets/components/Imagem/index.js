@@ -32,7 +32,7 @@ export default function Imagem ( { miniImg, zoomImg, alt } ) {
                     className="button-close" 
                     onClick={ () => setView( false ) } 
                 >
-                    X
+                    <p>Fechar</p> X
                 </div>
 
                 <img src={ zoomImg } alt={ alt } />

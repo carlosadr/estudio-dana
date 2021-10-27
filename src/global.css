@@ -9,18 +9,18 @@
 
 body{
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
+
+    background-color: #FFFDF0;
+    overflow-x: hidden;
+    color: #00366B;
 }
 
-body, input, textarea, button {
+body, input, textarea, button, p, strong {
     font: 400 1em Roboto, sans-serif;
     -webkit-font-smoothing: antialiesed;
-
-    color: #00366B;
-    background-color: #FFFDF0;
-
-    overflow-x: hidden;
 }
 
 a {
@@ -28,8 +28,69 @@ a {
     text-decoration: none;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
+::placeholder {
+    font-size: 1em;
+    color: #F8C9AA;
+}
+
+::selection {
+    color: #FFFDF0;
+    background-color: #EA4B37;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.max-container {
+    width: 100%;
+    max-width: 1360px;
+}
+
+.container .background {
+    margin: 0 auto;
+    width: auto;
+    height: 160vh;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 25px;
+}
+
+#social-media a img {
+    display: flex;
+    align-items: center;
+    
+    width: 100%;
+    height: 20px;
+    margin: 0 8px;
+    padding: 0 5px;
+    
+    transition: all 0.2s;
+}
+
+#social-media a:hover img {
+    height: 25px;
+}
+
 input, textarea, select {
-    font-size: 14px;
+    font-size: 1em;
     color: #EA4B37;
 
     max-width: 100%;
@@ -48,12 +109,6 @@ input, textarea, select {
 input:focus, textarea:focus, select:focus {
     border: solid 2px #EA4B37
 }
-
-::placeholder {
-    font-size: 14px;
-    color: #F8C9AA;
-}
-
 
 label {
     margin-top: 13px;
@@ -77,7 +132,7 @@ textarea {
     background-color: #EA4B37;
     border: none;
     color: #FFFDF0;
-
+    
     border-radius: 8px;
     transition: ease-in background-color 0.2s;
 }
@@ -87,25 +142,32 @@ textarea {
     background-color: #00366B;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    min-height: 100vh;
+@media only screen and (max-width: 1360px) {
+    .container .background {
+        height: 140vh;
+    }
 
-    justify-content: center;
-    align-items: center;
-}
+    input, textarea, select {
+        padding: 8px;
+        font-size: 0.85em;
+    }
+    
+    label {
+        font-size: 0.85em;
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+    input, select {
+        margin-top: 4px;
+        margin-bottom: 13px;
+    }
+    textarea {
+        margin-top: 4px;
+        margin-bottom: 16px;
+    }
 
-.max-container {
-    width: 100%;
-    max-width: 1360px;
-}
-
-.container .background {
-    margin: 0 auto;
-    width: auto;
-    height: 160vh;
+    #button {
+        width: 100%;
+        height: 40px;
+    }
 }

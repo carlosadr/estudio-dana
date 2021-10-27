@@ -16,9 +16,11 @@ export default function Home() {
             <Logo />
 
             <main id='home'
-                className='container'
+                className='container col-12'
             >
-                <h1 style={{ display: 'none' }}>Estúdio Dana 🌒🌕🌘 - O seu estúdio que transforma suas ideias em lindas e exclusivas estampas.</h1>
+                <h1 style={{ display: 'none' }}>
+                    Estúdio Dana 🌒🌕🌘 - O seu estúdio que transforma suas ideias em lindas e exclusivas estampas.
+                </h1>
                 <img className="background" src={background} alt="" />
             </main>
 

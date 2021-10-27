@@ -42,8 +42,8 @@ export default function NossasEstampas () {
             <section id='nossas-estampas' className='container'>
                 <div className="container-banner">
                     <div className="text-banner">
-                        <img src={estampasExclusivas} alt="" />
                         <img className='flower' src={flower} alt="" />
+                        <img src={estampasExclusivas} alt="" />
                         <p>
                             Somos especializados em transformar suas ideias em criações unicas, dentro das mais recentes tendências do mercado!
                         </p>

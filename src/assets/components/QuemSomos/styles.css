@@ -7,14 +7,12 @@
 .quem-somos .imagem {
     position: absolute;
     left: 120px;
-    width: 100%;
-    height: auto;
 }
 
 .quem-somos .container-text {
     position: absolute;
     right: 120px;
-    width: 100%;
+
     max-width: 572px;
 
     padding: 51px 160px 51px 51px;
@@ -27,12 +25,11 @@
 .quem-somos .container-text .text {
     display: flex;
     flex-direction: column;
-    margin-top: 45px;
+    margin-top: 10%;
     
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: 300;
 
-    line-height: 21px;
     align-items: center;
     text-align: justify;
 }
@@ -48,4 +45,33 @@
 
     width: auto;
     height: 657px;
+}
+
+@media only screen and (max-width: 1360px) {
+    .quem-somos .imagem {
+        left: 140px;
+        width: 50%;
+    }
+
+    .quem-somos .container-text {
+        position: absolute;
+        right: 140px;
+        
+        width: 40%;
+
+        padding: 30px 160px 30px 30px;
+    }
+
+    .quem-somos .container-text .text {
+        margin-top: 10%;
+        font-size: 0.9em;
+    }
+
+    
+    .quem-somos .container-text .toucan {
+        right: -12%;
+        top: -8%;
+        width: auto;
+        height: 540px;
+    }
 }

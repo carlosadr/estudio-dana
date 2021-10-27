@@ -13,7 +13,7 @@ export default function Logo () {
         document.addEventListener('scroll', () => {
             if (document.documentElement.scrollTop > 325) {
                 setPosition('fixed')
-                setTop('2.2%')
+                setTop('20px')
                 setWidth('220px')
             } else {
                 setPosition('absolute')

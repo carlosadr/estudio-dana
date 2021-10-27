@@ -1,6 +1,6 @@
 .nav {
     background-color: #fffdf0d8;
-    padding: 20px;
+    padding: 15px;
 
     position: fixed;
     top: 0;
@@ -20,16 +20,12 @@
 .nav a {
     margin: 0 8px;
     padding: 8px 22px;
-    border: solid 1px transparent;
+    border: solid 2px transparent;
 
     transition: all 0.2s;
 }
 
 .nav a:hover {
     color: #EA4B37;
-    border-bottom: solid 1px #EA4B37;
-}
-
-.active {
-    border-bottom: solid 1px #EA4B37;
+    border-bottom: solid 2px #EA4B37;
 }

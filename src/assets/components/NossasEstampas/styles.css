@@ -45,6 +45,7 @@
     position: absolute;
     top: -15%;
     right: -15%;
+    width: auto;
     height: 50%;
 }
 
@@ -52,7 +53,7 @@
     margin: auto 0;
 
     font-weight: 500;
-    font-size: 24px;
+    font-size: 1.5em;
     line-height: 36px;
 
     display: flex;
@@ -70,7 +71,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 #nossas-estampas .container-estampas .title {
@@ -97,4 +97,20 @@
 #nossas-estampas .container-estampas .images .rows {
     display: flex;
     flex-direction: row;
+}
+
+@media only screen and (max-width: 1360px) {
+    #nossas-estampas .container-banner {
+        height: 280px;
+    }
+
+    #nossas-estampas .container-banner .text-banner {
+        max-width: 280px;
+        padding: 20px;
+    }
+
+    #nossas-estampas .container-banner .text-banner p {
+        font-size: 1em;
+        line-height: 24px;
+    }
 }

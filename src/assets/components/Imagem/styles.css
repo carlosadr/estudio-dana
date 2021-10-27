@@ -3,8 +3,6 @@
 }
 
 .mini-imagem img {
-    width: 100%;
-    height: auto;
     max-width: 320px;
     margin: 8px;
     border-radius: 15px;
@@ -34,17 +32,34 @@
 }
 
 .zoom-img img {
-    width: 100%;
-    height: auto;
     max-width: 1900px;
 }
 
 .button-close {
     position: absolute;
 
+    display: flex;
+    align-items: center;
+
     top: 20px;
     right: 30px;
 
-    color: white;
+    color: #FFFDF0;
     font-size: 20px;
+}
+
+.button-close p {
+    font-size: 0.7em;
+    margin-right: 8px;
+}
+
+.button-close:hover {
+    color: #EA4B37;
+    transition: color ease-in 0.2s;
+}
+
+@media only screen and (max-width: 1360px) {
+    .mini-imagem img {
+        max-width: 240px;
+    }
 }
