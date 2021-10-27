@@ -5,22 +5,49 @@ import './styles.css'
 import logo from '../../svg/logo.svg'
 
 export default function Logo () {
-    const [position, setPosition] = useState('absolute')
-    const [top, setTop] = useState('35%')
-    const [width, setWidth] = useState('340px')
+    const [position, setPosition] = useState('')
+    const [top, setTop] = useState('')
+    const [width, setWidth] = useState('')
+
+    window.onload = () => {
+        if ( window.screen.width < 600 ) {
+            setPosition('absolute')
+            setTop('40%')
+            setWidth('300px')
+        } else {
+            setPosition('absolute')
+            setTop('35%')
+            setWidth('340px')
+        }
+    }
 
     window.onscroll = () => {
-        document.addEventListener('scroll', () => {
-            if (document.documentElement.scrollTop > 325) {
-                setPosition('fixed')
-                setTop('20px')
-                setWidth('220px')
-            } else {
-                setPosition('absolute')
-                setTop('35%')
-                setWidth('340px')
-            }
-        })
+        if ( window.screen.width < 600 ) {
+            document.addEventListener('scroll', () => {
+                if (document.documentElement.scrollTop > 150) {
+                    setPosition('fixed')
+                    setTop('10px')
+                    setWidth('220px')
+                } else {
+                    setPosition('absolute')
+                    setTop('40%')
+                    setWidth('300px')
+                }
+            })
+        } else {
+            document.addEventListener('scroll', () => {
+                if (document.documentElement.scrollTop > 325) {
+                    setPosition('fixed')
+                    setTop('20px')
+                    setWidth('220px')
+                } else {
+                    setPosition('absolute')
+                    setTop('35%')
+                    setWidth('340px')
+                }
+            })
+        }
+
     }
     
     function _handlePosition() {

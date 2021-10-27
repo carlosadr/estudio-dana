@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
 body{
     display: flex;
     flex: 1;
@@ -14,7 +18,6 @@ body{
     justify-content: center;
 
     background-color: #FFFDF0;
-    overflow-x: hidden;
     color: #00366B;
 }
 
@@ -145,6 +148,43 @@ textarea {
 @media only screen and (max-width: 1360px) {
     .container .background {
         height: 140vh;
+    }
+
+    input, textarea, select {
+        padding: 8px;
+        font-size: 0.85em;
+    }
+    
+    label {
+        font-size: 0.85em;
+        margin-top: 8px;
+        margin-bottom: 2px;
+    }
+    input, select {
+        margin-top: 4px;
+        margin-bottom: 13px;
+    }
+    textarea {
+        margin-top: 4px;
+        margin-bottom: 16px;
+    }
+
+    #button {
+        width: 100%;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container .background {
+        display: none;
+    }
+
+    main {
+        background-image: url('./assets/images/background-mobile.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     input, textarea, select {

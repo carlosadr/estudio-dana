@@ -34,6 +34,7 @@ export default function FaleConosco () {
                     <label> Seu nome </label>
                     <input
                         placeholder="ex.: Thomas Magno"
+                        type='text'
                         value={name}
                         onChange={e => setName(e.target.value)}
                     />
@@ -41,6 +42,7 @@ export default function FaleConosco () {
                     <label> Mensagem </label>
                     <textarea
                         value={message}
+                        type='text'
                         onChange={e => setMessage(e.target.value)}
                         placeholder="Deixe sua mensagem aqui, que iremos responder com todo carinho ;)"
                     />

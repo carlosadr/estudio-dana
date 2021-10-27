@@ -36,7 +36,7 @@ import macaw from '../../images/macaw.webp'
 import flower from '../../images/flower.webp'
 import Imagem from '../Imagem'
 
-export default function NossasEstampas () {
+export default function NossasEstampas() {
     return (
         <>
             <section id='nossas-estampas' className='container'>
@@ -56,62 +56,74 @@ export default function NossasEstampas () {
                     </div>
                     <div className="images">
                         <div className="rows">
-                            <Imagem 
-                                miniImg={ miniImg1 }
-                                zoomImg={ img1 }
-                            />
-                            <Imagem 
-                                miniImg={ miniImg2 }
-                                zoomImg={ img2 }
-                            />
-                            <Imagem 
-                                miniImg={ miniImg3 }
-                                zoomImg={ img3 }
-                            />
-                            <Imagem 
-                                miniImg={ miniImg4 }
-                                zoomImg={ img4 }
-                                alt={ 'Estampa feita com a maioria dos elementos desenhados a mão.' }
-                            />
+                            <div>
+                                <Imagem
+                                    miniImg={miniImg1}
+                                    zoomImg={img1}
+                                />
+                                <Imagem
+                                    miniImg={miniImg2}
+                                    zoomImg={img2}
+                                />
+                            </div>
+                            <div>
+                                <Imagem
+                                    miniImg={miniImg3}
+                                    zoomImg={img3}
+                                />
+                                <Imagem
+                                    miniImg={miniImg4}
+                                    zoomImg={img4}
+                                    alt={'Estampa feita com a maioria dos elementos desenhados a mão.'}
+                                />
+                            </div>
                         </div>
 
                         <div className="rows">
-                            <Imagem 
-                                miniImg={ miniImg5 }
-                                zoomImg={ img5 }
-                            />
-                            <Imagem 
-                                miniImg={ miniImg6 }
-                                zoomImg={ img6 }
-                            />
-                            <Imagem 
-                                miniImg={ miniImg7 }
-                                zoomImg={ img7 }
-                            />
-                            <Imagem 
-                                miniImg={ miniImg8 }
-                                zoomImg={ img8 }
-                                alt={ 'Estampa feita com a maioria dos elementos desenhados a mão.' }
-                            />
+                            <div>
+                                <Imagem
+                                    miniImg={miniImg5}
+                                    zoomImg={img5}
+                                />
+                                <Imagem
+                                    miniImg={miniImg6}
+                                    zoomImg={img6}
+                                />
+                            </div>
+                            <div>
+                                <Imagem
+                                    miniImg={miniImg7}
+                                    zoomImg={img7}
+                                />
+                                <Imagem
+                                    miniImg={miniImg8}
+                                    zoomImg={img8}
+                                    alt={'Estampa feita com a maioria dos elementos desenhados a mão.'}
+                                />
+                            </div>
                         </div>
-                        
+
                         <div className="rows">
-                            <Imagem 
-                                miniImg={ miniImg9 }
-                                zoomImg={ img9 }
-                            />
-                            <Imagem 
-                                miniImg={ miniImg10 }
-                                zoomImg={ img10 }
-                            />
-                            <Imagem 
-                                miniImg={ miniImg11 }
-                                zoomImg={ img11 }
-                            />
-                            <Imagem 
-                                miniImg={ miniImg12 }
-                                zoomImg={ img12 }
-                            />
+                            <div>
+                                <Imagem
+                                    miniImg={miniImg9}
+                                    zoomImg={img9}
+                                />
+                                <Imagem
+                                    miniImg={miniImg10}
+                                    zoomImg={img10}
+                                />
+                            </div>
+                            <div>
+                                <Imagem
+                                    miniImg={miniImg11}
+                                    zoomImg={img11}
+                                />
+                                <Imagem
+                                    miniImg={miniImg12}
+                                    zoomImg={img12}
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -114,3 +114,37 @@
         line-height: 24px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #nossas-estampas .container-estampas .title {
+        position: relative;
+        width: 60%;
+        margin-top: 8%;
+    }
+    
+    #nossas-estampas .container-estampas .title #macaw {
+        position: absolute;
+        width: 180px;
+    
+        top: -70%;
+        left: -39%;
+    
+        z-index: -1;
+    }
+
+    #nossas-estampas .container-estampas .images {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    
+    #nossas-estampas .container-estampas .images .rows {
+        display: flex;
+        flex-direction: column;
+    }
+    #nossas-estampas .container-estampas .images .rows div {
+        display: flex;
+        flex-direction: row;
+        margin: 0 8px;
+    }
+}

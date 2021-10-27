@@ -11,10 +11,10 @@ export default function QuemSomos() {
         <>
             <section id='quem-somos' className='container quem-somos max-container'>
                 <div className='imagem'>
-                    <img src={imgQuemSomos} alt="" />
+                    <img src={imgQuemSomos} alt="Carla Patrícia e Carlos André, fundadores do estúdio." />
                 </div>
                 <div className="container-text">
-                    <img src={ quemSomos } alt="Quem Somos" className="col-12" />
+                    <img src={ quemSomos } alt="Quem Somos" />
                     
                     <div className="text">
                         <p>

@@ -1,4 +1,14 @@
 .logo {
-    left: 10%;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+
+    left: calc( 50% - 150px );
     z-index: 4;
+    transform-origin: center;
+}
+
+.logo {
+    transform-origin: center;
 }

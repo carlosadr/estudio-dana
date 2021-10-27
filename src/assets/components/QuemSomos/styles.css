@@ -75,3 +75,35 @@
         height: 540px;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .quem-somos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quem-somos .imagem {
+        position: relative;
+        left: 0;
+        margin: 8px 0;
+        width: 105%;
+    }
+
+    .quem-somos .container-text {
+        position: relative;
+        top: -50px;
+        right: 0;
+        width: 105%;
+        padding: 30px;
+        border-radius: 0;
+    }
+
+    .quem-somos .container-text .text {
+        margin-top: 10%;
+        font-size: 0.9em;
+    }
+    
+    .quem-somos .container-text .toucan {
+        display: none;
+    }
+}

@@ -1,5 +1,4 @@
 .nav {
-    background-color: #fffdf0d8;
     padding: 15px;
 
     position: fixed;
@@ -28,4 +27,14 @@
 .nav a:hover {
     color: #EA4B37;
     border-bottom: solid 2px #EA4B37;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav nav {
+        display: none;
+    }
+
+    .nav {
+        height: 50px;
+    }
 }
