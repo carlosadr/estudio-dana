@@ -1,28 +1,18 @@
 import React, { useState } from 'react';
-
 import './styles.css'
 
 import logo from '../../svg/logo.svg'
 
 export default function Logo () {
-    const [position, setPosition] = useState('')
-    const [top, setTop] = useState('')
-    const [width, setWidth] = useState('')
 
-    window.onload = () => {
-        if ( window.screen.width < 600 ) {
-            setPosition('absolute')
-            setTop('40%')
-            setWidth('300px')
-        } else {
-            setPosition('absolute')
-            setTop('35%')
-            setWidth('340px')
-        }
-    }
+    const screenWidth = window.screen.width < 600
+
+    const [position, setPosition] = useState('absolute')
+    const [top, setTop] = useState( screenWidth < 600 ? '40%' : '35%' )
+    const [width, setWidth] = useState( screenWidth < 600 ? '300px' : '340px' )
 
     window.onscroll = () => {
-        if ( window.screen.width < 600 ) {
+        if ( screenWidth < 600 ) {
             document.addEventListener('scroll', () => {
                 if (document.documentElement.scrollTop > 150) {
                     setPosition('fixed')
@@ -47,7 +37,6 @@ export default function Logo () {
                 }
             })
         }
-
     }
     
     function _handlePosition() {
