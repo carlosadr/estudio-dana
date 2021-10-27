@@ -15,7 +15,7 @@
             "purpose": "any maskable"
         }
     ],
-    "start_url": "https://estudiodana.com.br/",
+    "start_url": "/",
     "display": "standalone",
     "theme_color": "#FFFDF0",
     "background_color": "#FFFDF0",
