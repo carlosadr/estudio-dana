@@ -18,7 +18,7 @@ export default function Home() {
             <main id='home'
                 className='container'
             >
-                <h1 style={{ display: 'none' }}>
+                <h1 style={{ color: 'transparent' }}>
                     Estúdio Dana - O seu estúdio que transforma suas ideias em lindas e exclusivas estampas.
                 </h1>
                 <img className="background" src={background} alt="Estampas com elementos exclusivos." />
