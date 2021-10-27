@@ -4,11 +4,11 @@
     align-items: center;
     justify-content: center;
 
-    left: calc( 50% - 150px );
+    left: 10%;
     z-index: 4;
     transform-origin: center;
 }
 
-.logo {
-    transform-origin: center;
+@media only screen and (max-width: 600px) {
+    .logo { left: calc( 50% - 150px ); }
 }

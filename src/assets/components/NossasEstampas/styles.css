@@ -99,6 +99,11 @@
     flex-direction: row;
 }
 
+#nossas-estampas .container-estampas .images .rows div {
+    display: flex;
+    flex-direction: row;
+}
+
 @media only screen and (max-width: 1360px) {
     #nossas-estampas .container-banner {
         height: 280px;
