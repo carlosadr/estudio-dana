@@ -1,6 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
-	<g>
-		<path fill="#FFFDF0" class="st0" d="M567,222H434.3C340.8,222,265,297.8,265,391.3V524h130V384.56c0-17.98,14.58-32.56,32.56-32.56H567V222z"/>
-		<path fill="#FFFDF0" class="st0" d="M631,506v139.44c0,17.98-14.58,32.56-32.56,32.56H459v130h132.7c93.5,0,169.3-75.8,169.3-169.3V506H631z"/>
-	</g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1024 1024" style="enable-background:new 0 0 1024 1024;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<path class="st0" d="M606.81,6H376.28C213.85,6,82.17,137.67,82.17,300.1v230.53h225.84V288.39c0-31.24,25.32-56.56,56.56-56.56
+		h242.24V6z"/>
+	<path class="st0" d="M717.99,499.37v242.24c0,31.24-25.32,56.56-56.56,56.56H419.19V1024h230.53c162.43,0,294.1-131.67,294.1-294.1
+		V499.37H717.99z"/>
+</g>
 </svg>
