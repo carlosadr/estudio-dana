@@ -100,7 +100,7 @@ export default function FaleConosco () {
                             <a 
                                 target='_blank'
                                 rel="noreferrer"
-                                href="https://www.shutterstock.com/pt/g/candrereboucas"
+                                href="https://www.shutterstock.com/g/candrereboucas?rid=294618133&utm_medium=email&utm_source=ctrbreferral-link"
                             > 
                                 <img src={ shutterstock } alt="Shutterstock - Estúdio Dana" />  
                             </a>
