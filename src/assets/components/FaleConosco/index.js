@@ -5,11 +5,11 @@ import './styles.css'
 import faleConosco from '../../svg/fale-conosco.svg'
 
 import instagram from '../../svg/instagram.svg'
-// import facebook from '../../svg/facebook.svg'
+import facebook from '../../svg/facebook.svg'
+import shutterstock from '../../svg/shutterstock.svg'
 import pinterest from '../../svg/pinterest.svg'
 
 export default function FaleConosco () {
-
     const [channel, setChannel] = useState(0)
     const [name, setName] = useState("")
     const [message, setMessage] = useState("")
@@ -33,6 +33,7 @@ export default function FaleConosco () {
 
                     <label> Seu nome </label>
                     <input
+                        required
                         placeholder="ex.: Thomas Magno"
                         type='text'
                         value={name}
@@ -51,22 +52,26 @@ export default function FaleConosco () {
                         id="button"
                         type="button"
                         onClick={() => {
-                            switch (channel) {
-                                case 1:
-                                    window.open(
-                                        `whatsapp://send?phone=17623096714&text=Olá me chamo ${name}, ${message}`,
-                                        '_blank'
-                                    )
-                                    break;
-                                case 2:
-                                    window.open(
-                                        `mailto:estudiodana.cs@gmail.com? Subject: Mais informações sobre as estampas exclusivas&body=Olá me chamo ${name}, ${message}`,
-                                        '_blank'
-                                    )
-                                    break;
-                                default:
-                                    alert("Selecione primeiro por qual canal deseja nós enviar sua mensagem.")
-                                    break;
+                            if ( !name ) {
+                                alert("Insira seu nome.")
+                            } else {
+                                switch (channel) {
+                                    case 1:
+                                        window.open(
+                                            `whatsapp://send?phone=17623096714&text=Olá me chamo ${name}, ${message}`,
+                                            '_blank'
+                                        )
+                                        break;
+                                    case 2:
+                                        window.open(
+                                            `mailto:estudiodana.cs@gmail.com? Subject: Mais informações sobre as estampas exclusivas&body=Olá me chamo ${name}, ${message}`,
+                                            '_blank'
+                                        )
+                                        break;
+                                    default:
+                                        alert("Selecione primeiro por qual canal deseja nós enviar sua mensagem.")
+                                        break;
+                                }
                             }
                         }}
                     >
@@ -83,21 +88,28 @@ export default function FaleConosco () {
                                 rel="noreferrer"
                                 href="https://instagram.com/estudio_dana"
                             >
-                                <img src={instagram} alt="Instaram" />
+                                <img src={instagram} alt="Instagram - Estúdio Dana" />
                             </a>
-                            {/* <a 
+                            <a 
                                 target='_blank'
                                 rel="noreferrer"
-                                href="https://facebook.com/estudio_dana"
+                                href="https://web.facebook.com/Est%C3%BAdio-Dana-103640772123505/"
                             > 
-                                <img src={ facebook } alt="Facebook" />  
-                            </a> */}
+                                <img src={ facebook } alt="Facebook - Estúdio Dana" />  
+                            </a>
+                            <a 
+                                target='_blank'
+                                rel="noreferrer"
+                                href="https://www.shutterstock.com/pt/g/candrereboucas"
+                            > 
+                                <img src={ shutterstock } alt="Shutterstock - Estúdio Dana" />  
+                            </a>
                             <a
                                 target='_blank'
                                 rel="noreferrer"
                                 href="https://pinterest.com/estudio_dana"
                             >
-                                <img src={pinterest} alt="Pinterest" />
+                                <img src={pinterest} alt="Pinterest - Estúdio Dana" />
                             </a>
                         </div>
                     </div>
