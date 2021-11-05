@@ -39,7 +39,7 @@ export default function Nav() {
                         smooth={true}
                         duration={500}
                     >
-                        Contato
+                        Fale conosco
                     </Link>
                 </nav>
             </header>
