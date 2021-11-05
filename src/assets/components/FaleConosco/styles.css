@@ -29,6 +29,15 @@
     padding: 60px;
 }
 
+.fale-conosco #form label>strong {
+    color: #EA4B37;
+    font-size: medium;
+}
+
+.fale-conosco #form #opcional {
+    color: #707279;
+}
+
 .fale-conosco #form img {
     margin-bottom: 26px;
 }

@@ -14,13 +14,36 @@ export default function FaleConosco () {
     const [name, setName] = useState("")
     const [message, setMessage] = useState("")
 
+    function _handleDisabledButton() {
+        return channel === 0 || !name ? { cursor : 'no-drop'} : { cursor : 'pointer' } 
+    }
+
+    function _handleSubmit () {
+        switch (channel) {
+            case 1:
+                window.open(
+                    `whatsapp://send?phone=17623096714&text=Olá me chamo ${name}${!message ? ', ' : '' } ${message}`,
+                    '_blank'
+                )
+                break;
+            case 2:
+                window.open(
+                    `mailto:estudiodana.cs@gmail.com? Subject: Mais informações sobre as estampas exclusivas&body=Olá me chamo ${name}${!message ? ', ' : '' } ${message}`,
+                    '_blank'
+                )
+                break;
+            
+            default: break;
+        }
+    }
+
     return (
         <>
             <section id='fale-conosco' className='container fale-conosco'>
                 <form id='form'>
                     <img src={faleConosco} alt="" />
 
-                    <label> Canal </label>
+                    <label> Canal <strong>*</strong> </label>
                     <select
                         style={ channel === 0 ? { color: "#F8C9AA"} : { color : "#EA4B37" } }
                         defaultValue={0}
@@ -31,7 +54,7 @@ export default function FaleConosco () {
                         <option value={2} >E-mail</option>
                     </select>
 
-                    <label> Seu nome </label>
+                    <label> Seu nome <strong>*</strong> </label>
                     <input
                         required
                         placeholder="ex.: Thomas Magno"
@@ -40,7 +63,7 @@ export default function FaleConosco () {
                         onChange={e => setName(e.target.value)}
                     />
 
-                    <label> Mensagem </label>
+                    <label> Mensagem <strong id='opcional'>( opcional )</strong> </label>
                     <textarea
                         value={message}
                         type='text'
@@ -51,29 +74,9 @@ export default function FaleConosco () {
                     <button
                         id="button"
                         type="button"
-                        onClick={() => {
-                            if ( !name ) {
-                                alert("Insira seu nome.")
-                            } else {
-                                switch (channel) {
-                                    case 1:
-                                        window.open(
-                                            `whatsapp://send?phone=17623096714&text=Olá me chamo ${name}, ${message}`,
-                                            '_blank'
-                                        )
-                                        break;
-                                    case 2:
-                                        window.open(
-                                            `mailto:estudiodana.cs@gmail.com? Subject: Mais informações sobre as estampas exclusivas&body=Olá me chamo ${name}, ${message}`,
-                                            '_blank'
-                                        )
-                                        break;
-                                    default:
-                                        alert("Selecione primeiro por qual canal deseja nós enviar sua mensagem.")
-                                        break;
-                                }
-                            }
-                        }}
+                        disabled={ channel === 0 || !name ? true : false }
+                        style={ _handleDisabledButton() }
+                        onClick={ () => _handleSubmit() }
                     >
                         Enviar
                     </button>
