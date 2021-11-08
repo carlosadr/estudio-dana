@@ -8,6 +8,7 @@ import instagram from '../../svg/instagram.svg'
 import facebook from '../../svg/facebook.svg'
 import shutterstock from '../../svg/shutterstock.svg'
 import pinterest from '../../svg/pinterest.svg'
+import twitter from '../../svg/twitter.svg'
 
 export default function FaleConosco () {
     const [channel, setChannel] = useState(0)
@@ -91,28 +92,35 @@ export default function FaleConosco () {
                                 rel="noreferrer"
                                 href="https://instagram.com/estudio_dana"
                             >
-                                <img src={instagram} alt="Instagram - Estúdio Dana" />
+                                <img src={instagram} alt="Instagram - Estúdio Dana | Estampas exclusivas" />
                             </a>
                             <a 
                                 target='_blank'
                                 rel="noreferrer"
                                 href="https://web.facebook.com/Est%C3%BAdio-Dana-103640772123505/"
                             > 
-                                <img src={ facebook } alt="Facebook - Estúdio Dana" />  
+                                <img src={ facebook } alt="Facebook - Estúdio Dana | Estampas exclusivas" />  
                             </a>
                             <a 
                                 target='_blank'
                                 rel="noreferrer"
                                 href="https://www.shutterstock.com/g/candrereboucas?rid=294618133&utm_medium=email&utm_source=ctrbreferral-link"
                             > 
-                                <img src={ shutterstock } alt="Shutterstock - Estúdio Dana" />  
+                                <img src={ shutterstock } alt="Shutterstock - Estúdio Dana | Estampas exclusivas" />  
                             </a>
                             <a
                                 target='_blank'
                                 rel="noreferrer"
                                 href="https://pinterest.com/estudio_dana"
                             >
-                                <img src={pinterest} alt="Pinterest - Estúdio Dana" />
+                                <img src={pinterest} alt="Pinterest - Estúdio Dana | Estampas exclusivas" />
+                            </a>
+                            <a
+                                target='_blank'
+                                rel="noreferrer"
+                                href="https://twitter.com/estudio_dana"
+                            >
+                                <img src={twitter} alt="Twitter - Estúdio Dana" />
                             </a>
                         </div>
                     </div>
