@@ -60,21 +60,24 @@ export default function NossasEstampas() {
                                 <Imagem
                                     miniImg={miniImg1}
                                     zoomImg={img1}
+                                    alt='Estampa exclusiva com elementos bordados.'
                                 />
                                 <Imagem
                                     miniImg={miniImg2}
                                     zoomImg={img2}
+                                    alt='Estampa barrada com abacaxis em aquarela com barrado.'
                                 />
                             </div>
                             <div>
                                 <Imagem
                                     miniImg={miniImg3}
                                     zoomImg={img3}
+                                    alt='Estampa illustrada com araras.'
                                 />
                                 <Imagem
                                     miniImg={miniImg4}
                                     zoomImg={img4}
-                                    alt={'Estampa feita com a maioria dos elementos desenhados a mão.'}
+                                    alt={'Estampa de caju com elementos desenhados em aquarela montados em um barrado.'}
                                 />
                             </div>
                         </div>
@@ -84,16 +87,19 @@ export default function NossasEstampas() {
                                 <Imagem
                                     miniImg={miniImg5}
                                     zoomImg={img5}
+                                    alt='Estampa geometrica com hexagonos em tecidos.'
                                 />
                                 <Imagem
                                     miniImg={miniImg6}
                                     zoomImg={img6}
+                                    alt='Estampa dente geometrica dente de leão.'
                                 />
                             </div>
                             <div>
                                 <Imagem
                                     miniImg={miniImg7}
                                     zoomImg={img7}
+                                    alt='Estampa abstrata com elementos desenhados em giz de cera.'
                                 />
                                 <Imagem
                                     miniImg={miniImg8}
@@ -108,20 +114,24 @@ export default function NossasEstampas() {
                                 <Imagem
                                     miniImg={miniImg9}
                                     zoomImg={img9}
+                                    alt='Estampa infantil com casinhas e fadinhas.'
                                 />
                                 <Imagem
                                     miniImg={miniImg10}
                                     zoomImg={img10}
+                                    alt='Estampa infantil com casinhas coloridas e divertidas.'
                                 />
                             </div>
                             <div>
                                 <Imagem
                                     miniImg={miniImg11}
                                     zoomImg={img11}
+                                    alt='Estampa divertida com sorvetes de varios sabores.'
                                 />
                                 <Imagem
                                     miniImg={miniImg12}
                                     zoomImg={img12}
+                                    alt='Estampa floral geometrico infantil.'
                                 />
                             </div>
                         </div>
