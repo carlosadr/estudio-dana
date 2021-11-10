@@ -3,32 +3,18 @@ import React from 'react'
 import './styles.css'
 
 // Imagens em miniatura
-import miniImg1 from '../../images/estampas/mini-img1.webp'
-import miniImg2 from '../../images/estampas/mini-img2.webp'
-import miniImg3 from '../../images/estampas/mini-img3.webp'
-import miniImg4 from '../../images/estampas/mini-img4.webp'
 import miniImg5 from '../../images/estampas/mini-img5.webp'
 import miniImg6 from '../../images/estampas/mini-img6.webp'
 import miniImg7 from '../../images/estampas/mini-img7.webp'
 import miniImg8 from '../../images/estampas/mini-img8.webp'
-import miniImg9 from '../../images/estampas/mini-img9.webp'
 import miniImg10 from '../../images/estampas/mini-img10.webp'
-import miniImg11 from '../../images/estampas/mini-img11.webp'
-import miniImg12 from '../../images/estampas/mini-img12.webp'
 
 // Imagens maiores
-import img1 from '../../images/estampas/img1.webp'
-import img2 from '../../images/estampas/img2.webp'
-import img3 from '../../images/estampas/img3.webp'
-import img4 from '../../images/estampas/img4.webp'
 import img5 from '../../images/estampas/img5.webp'
 import img6 from '../../images/estampas/img6.webp'
 import img7 from '../../images/estampas/img7.webp'
 import img8 from '../../images/estampas/img8.webp'
-import img9 from '../../images/estampas/img9.webp'
 import img10 from '../../images/estampas/img10.webp'
-import img11 from '../../images/estampas/img11.webp'
-import img12 from '../../images/estampas/img12.webp'
 
 import estampasExclusivas from '../../svg/estampas-exclusivas.svg'
 import nossasEstampas from '../../svg/nossas-estampas.svg'
@@ -55,33 +41,6 @@ export default function NossasEstampas() {
                         <img id='macaw' src={macaw} alt="" />
                     </div>
                     <div className="images">
-                        <div className="rows">
-                            <div>
-                                <Imagem
-                                    miniImg={miniImg1}
-                                    zoomImg={img1}
-                                    alt='Estampa exclusiva com elementos bordados.'
-                                />
-                                <Imagem
-                                    miniImg={miniImg2}
-                                    zoomImg={img2}
-                                    alt='Estampa barrada com abacaxis em aquarela com barrado.'
-                                />
-                            </div>
-                            <div>
-                                <Imagem
-                                    miniImg={miniImg3}
-                                    zoomImg={img3}
-                                    alt='Estampa illustrada com araras.'
-                                />
-                                <Imagem
-                                    miniImg={miniImg4}
-                                    zoomImg={img4}
-                                    alt={'Estampa de caju com elementos desenhados em aquarela montados em um barrado.'}
-                                />
-                            </div>
-                        </div>
-
                         <div className="rows">
                             <div>
                                 <Imagem
@@ -112,26 +71,9 @@ export default function NossasEstampas() {
                         <div className="rows">
                             <div>
                                 <Imagem
-                                    miniImg={miniImg9}
-                                    zoomImg={img9}
-                                    alt='Estampa infantil com casinhas e fadinhas.'
-                                />
-                                <Imagem
                                     miniImg={miniImg10}
                                     zoomImg={img10}
                                     alt='Estampa infantil com casinhas coloridas e divertidas.'
-                                />
-                            </div>
-                            <div>
-                                <Imagem
-                                    miniImg={miniImg11}
-                                    zoomImg={img11}
-                                    alt='Estampa divertida com sorvetes de varios sabores.'
-                                />
-                                <Imagem
-                                    miniImg={miniImg12}
-                                    zoomImg={img12}
-                                    alt='Estampa floral geometrico infantil.'
                                 />
                             </div>
                         </div>
