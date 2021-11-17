@@ -77,6 +77,8 @@ export default function NossasEstampas() {
                                 />
                             </div>
                         </div>
+                        
+                        <div id="instafeed"></div>
                     </div>
                 </div>
             </section>
