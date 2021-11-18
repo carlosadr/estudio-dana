@@ -1,48 +1,46 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles.css'
 
 import logo from '../../svg/logo.svg'
 
 export default function Logo () {
-
     const screenWidth = window.screen.width < 600
+    const percentHeight = window.screen.height * 0.287
+    const center = window.screen.height * 0.6
 
-    const [position, setPosition] = useState('absolute')
-    const [top, setTop] = useState( screenWidth < 600 ? '40%' : '35%' )
-    const [width, setWidth] = useState( screenWidth < 600 ? '300px' : '340px' )
+    const [ scrollTop, setScrollTop ] = useState(0)
+    const [ position, setPosition ] = useState('absolute')
+    const [ width, setWidth ] = useState( screenWidth < 600 ? '300px' : '340px' )
+    const [ top, setTop ] = useState( ( center - scrollTop * 2 ) + '%' )
+    const [ left, setLeft ] = useState( '10%' )
 
     window.onscroll = () => {
-        if ( screenWidth < 600 ) {
-            document.addEventListener('scroll', () => {
-                if (document.documentElement.scrollTop > 150) {
-                    setPosition('fixed')
-                    setTop('10px')
-                    setWidth('220px')
-                } else {
-                    setPosition('absolute')
-                    setTop('40%')
-                    setWidth('300px')
-                }
-            })
-        } else {
-            document.addEventListener('scroll', () => {
-                if (document.documentElement.scrollTop > 325) {
-                    setPosition('fixed')
-                    setTop('20px')
-                    setWidth('220px')
-                } else {
-                    setPosition('absolute')
-                    setTop('35%')
-                    setWidth('340px')
-                }
-            })
-        }
+        document.addEventListener('scroll', () => {
+            setScrollTop( document.documentElement.scrollTop )
+        })
     }
+
+    useEffect( () => {
+        if ( scrollTop > percentHeight ) {
+            setPosition('relative')
+            setTop('0px')
+            setLeft('0px')
+            setWidth('20%')
+        }
+        
+        return ( () => {
+            setPosition('absolute')
+            setTop(( center - scrollTop * 2 ) + '%' )
+            setLeft('10%')
+            setWidth( screenWidth < 600 ? '300px' : '340px' )
+        })
+    }, [ scrollTop, screenWidth, percentHeight, center ])
     
     function _handlePosition() {
         return {
             position: position,
             top: top,
+            left: left,
             width: width,
             transition: 'width 0.6s'
         }
@@ -54,7 +52,7 @@ export default function Logo () {
                 className='logo'
                 style={_handlePosition()}
             >
-                <img src={logo} alt="Estúdio Dana" />
+                <img src={logo} alt="Estúdio Dana | Estampas exclusivas" />
             </div>
         </>
     )

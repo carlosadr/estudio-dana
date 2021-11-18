@@ -1,10 +1,7 @@
 .logo {
-    display: flex;
-    flex: 1;
     align-items: center;
     justify-content: center;
-
-    left: 10%;
+    
     z-index: 4;
     transform-origin: center;
 }

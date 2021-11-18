@@ -16,7 +16,7 @@ export default function FaleConosco () {
     const [message, setMessage] = useState("")
 
     function _handleDisabledButton() {
-        return channel === 0 || !name ? { cursor : 'no-drop'} : { cursor : 'pointer' } 
+        return channel === 0 || !name ? { backgroundColor: '#AAAAAA', cursor : 'no-drop'} : { cursor : 'pointer' } 
     }
 
     function _handleSubmit () {
@@ -43,7 +43,15 @@ export default function FaleConosco () {
             <section id='fale-conosco' className='container fale-conosco'>
                 <form id='form'>
                     <img src={faleConosco} alt="" />
-
+                    
+                    <h2 style={{
+                            color: 'transparent',
+                            maxHeight: '0px'
+                        }}
+                    >
+                        Fale conosco
+                    </h2>
+                    
                     <label> Canal <strong>*</strong> </label>
                     <select
                         style={ channel === 0 ? { color: "#F8C9AA"} : { color : "#EA4B37" } }

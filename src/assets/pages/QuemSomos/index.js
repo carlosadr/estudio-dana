@@ -16,6 +16,14 @@ export default function QuemSomos() {
                 <div className="container-text">
                     <img src={ quemSomos } alt="Quem Somos" />
                     
+                    <h2 style={{
+                            color: 'transparent',
+                            maxHeight: '0px'
+                        }}
+                    >
+                        Quem Somos
+                    </h2>
+                    
                     <div className="text">
                         <p>
                             Olá, somos do Estúdio Dana, me chamo Carla, sou maquiadora profissional há 4 anos e trabalho em conjunto com meu esposo Carlos que já atua no mercado de estamparia e ilustração digitais há 8 anos.

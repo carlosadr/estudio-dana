@@ -1,4 +1,8 @@
 .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
     background-color: #fffdf0d8;
     padding: 15px;
 
@@ -9,11 +13,13 @@
     align-items: center;
 
     z-index: 3;
+
+    transition: all 0.2s;
 }
 
 .nav nav {
     display: flex;
-    margin: 0 auto;
+    width: 100%;
     justify-content: right;
 }
 

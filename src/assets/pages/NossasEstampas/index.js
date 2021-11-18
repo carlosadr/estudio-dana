@@ -20,7 +20,7 @@ import estampasExclusivas from '../../svg/estampas-exclusivas.svg'
 import nossasEstampas from '../../svg/nossas-estampas.svg'
 import macaw from '../../images/macaw.webp'
 import flower from '../../images/flower.webp'
-import Imagem from '../Imagem'
+import Imagem from '../../components/Imagem'
 
 export default function NossasEstampas() {
     return (
@@ -30,6 +30,9 @@ export default function NossasEstampas() {
                     <div className="text-banner">
                         <img className='flower' src={flower} alt="" />
                         <img src={estampasExclusivas} alt="" />
+                        
+                        
+                        
                         <p>
                             Somos especializados em transformar suas ideias em criações unicas, dentro das mais recentes tendências do mercado!
                         </p>
@@ -37,8 +40,17 @@ export default function NossasEstampas() {
                 </div>
                 <div className="container-estampas max-container">
                     <div className="title">
+                        <h2 style={{
+                                color: 'transparent',
+                                maxHeight: '0px'
+                            }}
+                        >
+                            Nossas estampas
+                        </h2>
+
                         <img src={nossasEstampas} alt="" />
                         <img id='macaw' src={macaw} alt="" />
+                        
                     </div>
                     <div className="images">
                         <div className="rows">
