@@ -15,9 +15,15 @@ export default function Home() {
             <main id='home'
                 className='container'
             >
-                <h1 style={{ position: 'absolute', top: "-500px", left: "-500px", color: 'transparent' }}>
-                    Estúdio Dana - Estampas exclusivas.
-                </h1>
+                
+                <h2 style={{
+                        color: 'transparent',
+                        maxHeight: '0px'
+                    }}
+                >
+                    Estúdio Dana | Estampas exclusivas e muito mais, você só encontra aqui.
+                </h2>
+                
                 <img className="background" src={background} alt="Estampas com elementos exclusivos." />
             </main>
 
