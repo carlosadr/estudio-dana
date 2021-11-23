@@ -7,6 +7,20 @@
     box-sizing: border-box;
 }
 
+body {
+    animation-duration: 2.5s;
+    animation-name: show;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
+}
+
 html, body {
     overflow-x: hidden;
 }

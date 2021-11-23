@@ -17,26 +17,28 @@ export default function Imagem ( { miniImg, zoomImg, alt } ) {
 
     return (
         <>
-            <div 
-                className="mini-imagem" 
-                onClick={ () => setView( true ) }
-            >
-                <img src={ miniImg } alt={ alt } />
-            </div>
-            
-            <div 
-                className="zoom-img" 
-                style={ _handleView() }
-            >
+            <picture>
                 <div 
-                    className="button-close" 
-                    onClick={ () => setView( false ) } 
+                    className="mini-imagem" 
+                    onClick={ () => setView( true ) }
                 >
-                    <p>Fechar</p> X
+                    <img src={ miniImg } alt={ alt } />
                 </div>
+                
+                <div 
+                    className="zoom-img" 
+                    style={ _handleView() }
+                >
+                    <div 
+                        className="button-close" 
+                        onClick={ () => setView( false ) } 
+                    >
+                        <p>Fechar</p> X
+                    </div>
 
-                <img src={ zoomImg } alt={ alt } />
-            </div>
+                    <img src={ zoomImg } alt={ alt } />
+                </div>
+            </picture>
         </>
     )
 }
