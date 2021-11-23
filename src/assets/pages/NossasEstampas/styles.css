@@ -134,17 +134,12 @@
 
     #nossas-estampas .container-estampas .images {
         display: flex;
-        flex-direction: column;
-        margin-top: 15px;
-    }
-    
-    #nossas-estampas .container-estampas .images .rows {
-        display: flex;
-        flex-direction: column;
-    }
-    #nossas-estampas .container-estampas .images .rows div {
-        display: flex;
-        flex-direction: row;
-        margin: 0 8px;
+        flex: 1 1;
+        flex-wrap: wrap;
+        padding: 0 8px;
+        width: 100%;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -69,8 +69,9 @@
 }
 
 @media only screen and (max-width: 1360px) {
-    .mini-imagem img {
-        max-width: 240px;
+    .mini-imagem {
+        min-width: 160px !important;
+        max-width: 160px !important;
     }
 }
 
