@@ -90,18 +90,13 @@
 
 #nossas-estampas .container-estampas .images {
     display: flex;
-    flex-direction: column;
+    flex: 1 1;
+    flex-wrap: wrap;
+    width: 100%;
     margin-top: 50px;
-}
-
-#nossas-estampas .container-estampas .images .rows {
-    display: flex;
-    flex-direction: row;
-}
-
-#nossas-estampas .container-estampas .images .rows div {
-    display: flex;
-    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 @media only screen and (max-width: 1360px) {

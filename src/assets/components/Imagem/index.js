@@ -9,7 +9,7 @@ export default function Imagem ( { miniImg, zoomImg, alt } ) {
         return view ? { 
             display : 'flex', 
             overflow : 'hidden !important',
-            transition: "all 0.5s"
+            transition: "all 0.5s",
         } : { 
             display : 'none',
         }

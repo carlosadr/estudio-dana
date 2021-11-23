@@ -2,8 +2,18 @@
     cursor: pointer;
 }
 
-.mini-imagem img {
+.mini-imagem {
+    display: flex;
+    flex: 1 1;
+    padding: 8px;
+    width: 100%;
+    min-width: 320px;
     max-width: 320px;
+}
+
+.mini-imagem img {
+    display: flex;
+    flex: 1;
     margin: 8px;
     border-radius: 15px;
     outline: 12px solid transparent;

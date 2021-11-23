@@ -3,6 +3,8 @@ import React from 'react'
 import './styles.css'
 
 // Imagens em miniatura
+import miniImg1 from '../../images/estampas/mini-img1.webp'
+import miniImg2 from '../../images/estampas/mini-img2.webp'
 import miniImg5 from '../../images/estampas/mini-img5.webp'
 import miniImg6 from '../../images/estampas/mini-img6.webp'
 import miniImg7 from '../../images/estampas/mini-img7.webp'
@@ -10,6 +12,8 @@ import miniImg8 from '../../images/estampas/mini-img8.webp'
 import miniImg10 from '../../images/estampas/mini-img10.webp'
 
 // Imagens maiores
+import img1 from '../../images/estampas/img1.webp'
+import img2 from '../../images/estampas/img2.webp'
 import img5 from '../../images/estampas/img5.webp'
 import img6 from '../../images/estampas/img6.webp'
 import img7 from '../../images/estampas/img7.webp'
@@ -31,8 +35,6 @@ export default function NossasEstampas() {
                         <img className='flower' src={flower} alt="" />
                         <img src={estampasExclusivas} alt="" />
                         
-                        
-                        
                         <p>
                             Somos especializados em transformar suas ideias em criações unicas, dentro das mais recentes tendências do mercado!
                         </p>
@@ -53,44 +55,41 @@ export default function NossasEstampas() {
                         
                     </div>
                     <div className="images">
-                        <div className="rows">
-                            <div>
-                                <Imagem
-                                    miniImg={miniImg5}
-                                    zoomImg={img5}
-                                    alt='Estampa geometrica com hexagonos em tecidos.'
-                                />
-                                <Imagem
-                                    miniImg={miniImg6}
-                                    zoomImg={img6}
-                                    alt='Estampa dente geometrica dente de leão.'
-                                />
-                            </div>
-                            <div>
-                                <Imagem
-                                    miniImg={miniImg7}
-                                    zoomImg={img7}
-                                    alt='Estampa abstrata com elementos desenhados em giz de cera.'
-                                />
-                                <Imagem
-                                    miniImg={miniImg8}
-                                    zoomImg={img8}
-                                    alt={'Estampa feita com a maioria dos elementos desenhados a mão.'}
-                                />
-                            </div>
-                        </div>
-
-                        <div className="rows">
-                            <div>
-                                <Imagem
-                                    miniImg={miniImg10}
-                                    zoomImg={img10}
-                                    alt='Estampa infantil com casinhas coloridas e divertidas.'
-                                />
-                            </div>
-                        </div>
-                        
-                        <div id="instafeed"></div>
+                        <Imagem
+                            miniImg={miniImg1}
+                            zoomImg={img1}
+                            alt='Estampa geometrica com hexagonos em tecidos.'
+                        />
+                        <Imagem
+                            miniImg={miniImg2}
+                            zoomImg={img2}
+                            alt='Estampa dente geometrica dente de leão.'
+                        />
+                        <Imagem
+                            miniImg={miniImg5}
+                            zoomImg={img5}
+                            alt='Estampa geometrica com hexagonos em tecidos.'
+                        />
+                        <Imagem
+                            miniImg={miniImg6}
+                            zoomImg={img6}
+                            alt='Estampa dente geometrica dente de leão.'
+                        />
+                        <Imagem
+                            miniImg={miniImg7}
+                            zoomImg={img7}
+                            alt='Estampa abstrata com elementos desenhados em giz de cera.'
+                        />
+                        <Imagem
+                            miniImg={miniImg8}
+                            zoomImg={img8}
+                            alt={'Estampa feita com a maioria dos elementos desenhados a mão.'}
+                        />
+                        <Imagem
+                            miniImg={miniImg10}
+                            zoomImg={img10}
+                            alt='Estampa infantil com casinhas coloridas e divertidas.'
+                        />
                     </div>
                 </div>
             </section>
