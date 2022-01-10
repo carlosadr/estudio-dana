@@ -23,7 +23,7 @@ export default function FaleConosco () {
         switch (channel) {
             case 1:
                 window.open(
-                    `whatsapp://send?phone=17623096714&text=Olá me chamo ${name}${!message ? ', ' : '' } ${message}`,
+                    `whatsapp://send?phone=5585992570765&text=Olá me chamo ${name}${!message ? ', ' : '' } ${message}`,
                     '_blank'
                 )
                 break;
