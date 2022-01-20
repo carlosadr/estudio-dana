@@ -2,25 +2,25 @@ import React from 'react'
 
 import './styles.css'
 
-// Imagens em miniatura
-import miniImg1 from '../../images/estampas/mini-img1.webp'
-import miniImg2 from '../../images/estampas/mini-img2.webp'
-import miniImg3 from '../../images/estampas/mini-img3.webp'
-import miniImg5 from '../../images/estampas/mini-img5.webp'
-import miniImg6 from '../../images/estampas/mini-img6.webp'
-import miniImg7 from '../../images/estampas/mini-img7.webp'
-import miniImg8 from '../../images/estampas/mini-img8.webp'
-import miniImg10 from '../../images/estampas/mini-img10.webp'
+// // Imagens em miniatura
+// import miniImg1 from '../../images/estampas/mini-img1.webp'
+// import miniImg2 from '../../images/estampas/mini-img2.webp'
+// import miniImg3 from '../../images/estampas/mini-img3.webp'
+// import miniImg5 from '../../images/estampas/mini-img5.webp'
+// import miniImg6 from '../../images/estampas/mini-img6.webp'
+// import miniImg7 from '../../images/estampas/mini-img7.webp'
+// import miniImg8 from '../../images/estampas/mini-img8.webp'
+// import miniImg10 from '../../images/estampas/mini-img10.webp'
 
-// Imagens maiores
-import img1 from '../../images/estampas/img1.webp'
-import img2 from '../../images/estampas/img2.webp'
-import img3 from '../../images/estampas/img3.webp'
-import img5 from '../../images/estampas/img5.webp'
-import img6 from '../../images/estampas/img6.webp'
-import img7 from '../../images/estampas/img7.webp'
-import img8 from '../../images/estampas/img8.webp'
-import img10 from '../../images/estampas/img10.webp'
+// // Imagens maiores
+// import img1 from '../../images/estampas/img1.webp'
+// import img2 from '../../images/estampas/img2.webp'
+// import img3 from '../../images/estampas/img3.webp'
+// import img5 from '../../images/estampas/img5.webp'
+// import img6 from '../../images/estampas/img6.webp'
+// import img7 from '../../images/estampas/img7.webp'
+// import img8 from '../../images/estampas/img8.webp'
+// import img10 from '../../images/estampas/img10.webp'
 
 import estampasExclusivas from '../../svg/estampas-exclusivas.svg'
 import nossasEstampas from '../../svg/nossas-estampas.svg'
@@ -56,7 +56,17 @@ export default function NossasEstampas() {
                         <img id='macaw' src={macaw} alt="" />
                         
                     </div>
-                    <div className="images">
+                    <div
+                        loading="lazy"
+                        data-mc-src="1b13ec6f-446e-40aa-a096-699c3a94e428#instagram">
+                    </div>
+                            
+                    <script 
+                        src="https://cdn2.woxo.tech/a.js#618dbe79827f5a0016d84bfa" 
+                        async data-usrc>
+                    </script>
+
+                    {/* <div className="images">
                         <Imagem
                             miniImg={miniImg1}
                             zoomImg={img1}
@@ -97,7 +107,7 @@ export default function NossasEstampas() {
                             zoomImg={img10}
                             alt='Estampa infantil com casinhas coloridas e divertidas.'
                         />
-                    </div>
+                    </div> */}
                 </div>
             </section>
         </>
